@@ -1,0 +1,24 @@
+﻿-- <Migration ID="3b13a9e0-0f7c-43b2-8807-205d641b57af" />
+GO
+
+PRINT N'Dropping index [IX_DMSSTAT_RSTATS] from [dbo].[DMSSTAT_RSTATS]'
+GO
+DROP INDEX [IX_DMSSTAT_RSTATS] ON [dbo].[DMSSTAT_RSTATS]
+GO
+PRINT N'Dropping index [IX_DMSSTAT_TSTATS_A] from [dbo].[DMSSTAT_TSTATS]'
+GO
+DROP INDEX [IX_DMSSTAT_TSTATS_A] ON [dbo].[DMSSTAT_TSTATS]
+GO
+PRINT N'Dropping [dbo].[DMSSTAT_TSTATS]'
+GO
+DROP TABLE [dbo].[DMSSTAT_TSTATS]
+GO
+PRINT N'Dropping [dbo].[DMSSTAT_RSTATS]'
+GO
+DROP TABLE [dbo].[DMSSTAT_RSTATS]
+GO
+PRINT N'Altering [dbo].[Contacts]'
+GO
+ALTER TABLE [dbo].[Contacts] DROP
+COLUMN [LinkedIn]
+GO
