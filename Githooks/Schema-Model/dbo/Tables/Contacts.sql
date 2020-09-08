@@ -11,7 +11,8 @@ CREATE TABLE [dbo].[Contacts]
 [JoiningDate] [datetime] NULL CONSTRAINT [DF__Contacts__Joinin__1273C1CD] DEFAULT (getdate()),
 [ModifiedDate] [datetime] NULL,
 [Email] [nvarchar] (256) NULL,
-[Photo] [image] NULL
+[Photo] [image] NULL,
+[Twitter_ID] [nvarchar] (50) NULL
 )
 GO
 ALTER TABLE [dbo].[Contacts] ADD CONSTRAINT [PK__Contacts__912F378B7C53D1A0] PRIMARY KEY CLUSTERED  ([ContactsID])

@@ -35,6 +35,7 @@
     <Baselining>FolderBased</Baselining>
     <Provisioner>CustomScripts</Provisioner>
     <DeployChangesExecutionOrder>0f8695ea-5895-520c-9d2c-a7a44293fe3a|Programmable Objects\dbo\Functions\calculateEstimateOfReadingTime.sql;912c82cd-bd4b-519b-bb52-4faebd519829|Programmable Objects\dbo\Views\v_Articles.sql</DeployChangesExecutionOrder>
+    <IncludeObjectsInDataSync>Table=[dbo].[RSSFeeds]</IncludeObjectsInDataSync>
   </PropertyGroup>
   <!-- SQL CHANGE AUTOMATION OFFLINE SCHEMA MODEL OPTIONS -->
   <PropertyGroup>
@@ -196,6 +197,8 @@
     <None Include="Schema-Model\dbo\Tables\PersonData.sql" />
     <None Include="Schema-Model\dbo\Tables\RSSFeeds.sql" />
     <None Include="Migrations\1.1.0-Changes\001_20200805-0430_redgate.sql" />
+    <None Include="Migrations\1.1.0-Changes\002_20200827-1644_redgate.sql" />
+    <None Include="Migrations\1.1.0-Changes\003_20200903-1932_redgate.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Pre-Deployment\01_Initialize_Deployment.sql" />
