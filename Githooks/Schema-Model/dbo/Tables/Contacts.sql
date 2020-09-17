@@ -13,7 +13,8 @@ CREATE TABLE [dbo].[Contacts]
 [Email] [nvarchar] (256) NULL,
 [Photo] [image] NULL,
 [Twitter_ID] [nvarchar] (50) NULL,
-[Facebook] [nvarchar] (50) NULL
+[Facebook] [nvarchar] (50) NULL,
+[TikTok] [nvarchar] (50) NULL
 )
 GO
 ALTER TABLE [dbo].[Contacts] ADD CONSTRAINT [PK__Contacts__912F378B7C53D1A0] PRIMARY KEY CLUSTERED  ([ContactsID])
